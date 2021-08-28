@@ -1,0 +1,34 @@
+What are services?
+
+AppComponent
+|
+|   About Component
+|   
+|   User Component
+    |
+    |   UserDetailComponent
+
+1st Usecase:
+==================
+
+Let's say you have a AppComponent and it has two children About Component and UserDetailComponent
+
+User Component has another child Component called UserDetailComponent.
+
+You want to maintain logs for all these components.
+You want the log messages to be dynamic customized styling.
+But instead of writing the same logic in every Component. You want to make that reusable.
+
+In this scenario, you can centralized your business logic in service file and
+can access in any component application-wide.
+
+2nd Usecase:
+=================
+
+You want to access data from an API or may be a static array of data.
+But you are not sure about If you want that data somewhere else in your application at a later point of time.
+
+In this scenario, it's better to make a central repository where you will write your code to get the data from api 
+and you can call that function anywhere in the application to get the data.
+
+
