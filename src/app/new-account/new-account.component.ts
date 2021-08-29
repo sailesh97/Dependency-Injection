@@ -25,7 +25,7 @@ export class NewAccountComponent {
     service.logStatusChange(accountStatus); */ 
 
     //Right approach
-    this.loggingService.logStatusChange(accountStatus);
+    //this.loggingService.logStatusChange(accountStatus);
     // console.log('A server status changed, new status: ' + accountStatus);
   }
 }
