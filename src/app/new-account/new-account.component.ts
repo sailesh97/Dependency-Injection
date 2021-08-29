@@ -13,7 +13,9 @@ export class NewAccountComponent {
   constructor(private loggingService: LoggingService, private accountsService: AccountsService){
     this.accountsService.statusUpdated.subscribe(
       (status: string) => alert("New status :" + status)
-    )
+    );
+    // Listening to an event. The function inside subscribe will be called wheneve statusUpdate event will be emitted.
+    
   }
 
   onCreateAccount(accountName: string, accountStatus: string) {
