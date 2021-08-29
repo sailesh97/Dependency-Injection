@@ -31,4 +31,7 @@ But you are not sure about If you want that data somewhere else in your applicat
 In this scenario, it's better to make a central repository where you will write your code to get the data from api 
 and you can call that function anywhere in the application to get the data.
 
+3rd Usecase:
+=================
 
+Services are also useful in cross-component communication. Because through service we can avoid the messy confusing long chains of input and output. Let's see this in action.
